@@ -1,0 +1,116 @@
+*{
+    margin:0px;
+    padding:0px;
+    font-family: 'Quicksand', sans-serif;;
+}
+
+body{
+    background-image: url(./images/background_jogo_velha.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#container{
+    width: fit-content;
+    height: 420px;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    padding: 25px;
+    background-color:#fc6226;
+    border-radius: 15px;
+    border: rgb(26, 26, 26);
+    border-top: rgb(48, 48, 55);
+    border-right: rgb(48, 48, 55);
+    border-width: 5px;
+    border-style: solid;
+}
+
+#contador{
+    position:absolute;
+    height: fit-content;
+    padding:20px;
+    width: 200px;
+    left: 50px;
+    background-color: #ac2239fa;
+    border-radius: 30px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(48, 48, 55);
+}
+
+.line{
+    margin: -10px;
+}
+.allBlocks{
+    display: inline-block;
+    background-color: #17f054;
+    height: 100px;
+    width: 100px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.allBlocks:hover{
+    background-color:rgb(78, 255, 255);
+    border-color: rgb(78, 80, 80);
+    cursor:pointer;
+}
+
+.x{
+    position: relative;
+}
+.x:after{
+    position:absolute;
+    content:'X';
+    font-size: 50px;
+    line-height: 100px;
+    top:0px;
+    bottom: 10px;
+    left:0px;
+    right: 0px;
+}
+
+.o{
+    position: relative;
+}
+.o:after{
+    position:absolute;
+    content:'O';
+    font-size: 50px;
+    line-height: 100px;
+    top:0px;
+    bottom: 10px;
+    left:0px;
+    right: 0px;
+}
+
+#buttonReset{
+    padding: 7px;
+    margin-top:50px;
+    border-radius: 50%;
+    background-color: crimson;
+    background-image: url('./images/reset_button.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#buttonReset:hover{
+    padding: 12px;
+    cursor:pointer;
+}
+
+#winPage{
+    position:absolute;
+    visibility:hidden;
+    height: fit-content;
+    width: fit-content;
+    background-color: crimson;
+    right: 100px;
+    padding: 40px;
+    border-radius: 20px;
+}
